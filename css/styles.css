@@ -48,15 +48,18 @@ section {
   width: 270px;
   height: 350px;
   border-radius: 4px;
-  box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75); */
 }
 .card:hover {
   width: 275px;
   height: 355px;
   border-radius: 5px;
   transition: 0.3s;
+   box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
 }
 .img1,
 .img2,

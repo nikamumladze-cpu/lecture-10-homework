@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+section {
+  height: 600px;
+}
+
+.flash-sales-section {
+  width: 1200px;
+  height: 493px;
+  margin: 40px auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  color: #db4444;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.indicator::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 40px;
+  background-color: #db4444;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.title {
+  font-family: "Inter" sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 270px;
+  height: 350px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+}
+.card:hover {
+  width: 275px;
+  height: 355px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.img1,
+.img2,
+.img3,
+.img4:hover {
+  width: 275px;
+  height: 255px;
+  transition: 0.3s;
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: 270px;
+  height: 250px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.img1 {
+  padding: 49px;
+}
+.img2 {
+  padding: 55px 40px 94px 39px;
+}
+.img3 {
+  padding: 61px 50px 60px;
+}
+.img4 {
+  padding: 35px 82px 35px 81px;
+}
+h4 {
+  font-weight: 500;
+  font-style: Medium;
+  margin-top: 16px;
+}
+.price {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.old-price {
+  text-decoration: line-through;
+  margin-left: 12px;
+  color: gray;
+}
+.feedback {
+  display: flex;
+}
+.stars {
+  margin-right: 8px;
+}
+span {
+  font-weight: 600;
+  color: grey;
+
+  font-size: 14px;
+}
+.button {
+  width: 234px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 16px 48px;
+  background-color: #db4444;
+  color: aliceblue;
+  display: flex;
+  margin: auto;
+  box-shadow: -3px 4px 52px 1px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: -3px 4px 52px 1px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: -3px 4px 52px 1px rgba(0, 0, 0, 0.64);
+}
+.button:hover {
+  content: "";
+  box-shadow: 10px 10px 61px 11px rgba(27, 0, 255, 1);
+  -webkit-box-shadow: 10px 10px 61px 11px rgba(27, 0, 255, 1);
+  -moz-box-shadow: 10px 10px 61px 11px rgba(27, 0, 255, 1);
+  transition: 0.3s;
+}
+/* --- Tablet Styles (Max-width: 768px) --- */
+@media (max-width: 768px) {
+  .flash-sales-section {
+    width: 90%;
+    margin: 40px auto;
+    height: auto;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-shadow: none;
+  }
+
+  .card:hover {
+    width: calc(50% - 10px);
+    height: 350px;
+    box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* --- Mobile Styles (Max-width: 600px) --- */
+@media (max-width: 600px) {
+  .flash-sales-section {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    max-width: 350px;
+    box-shadow: 10px 10px 86px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .card:hover {
+    width: 100%;
+    height: auto;
+  }
+
+  .button {
+    width: 90%;
+    padding: 16px 0;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+  }
+}
